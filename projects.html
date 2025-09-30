@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rohit Manna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">Rohit Manna</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                    <a href="experience.html" class="hover:text-blue-600 transition">Experience</a>
+                    <a href="projects.html" class="text-blue-600 font-medium">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-900">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 hover:text-blue-600 transition">Home</a>
+            <a href="about.html" class="block py-2 hover:text-blue-600 transition">About</a>
+            <a href="experience.html" class="block py-2 hover:text-blue-600 transition">Experience</a>
+            <a href="projects.html" class="block py-2 text-blue-600 font-medium">Projects</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">My <span class="gradient-text">Projects</span></h1>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/1" alt="Multi-Tier Python Web App" class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i data-feather="layers" class="text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Multi-Tier Python Web App Deployment</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Developed a robust multi-tier architecture for a Python web application deployed on AWS.</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+                            <li>Automated provisioning of 20+ AWS resources using Terraform</li>
+                            <li>Implemented end-to-end CI/CD pipeline with GitHub Actions</li>
+                            <li>Cut deployment time by 40% and reduced manual intervention</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">AWS</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Terraform</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">GitHub Actions</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/2" alt="Automating App Deployment" class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i data-feather="refresh-cw" class="text-green-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Automating App Deployment on AWS</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Automated the deployment process of a Flask application on AWS.</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+                            <li>Deployed 15+ AWS resources using Terraform</li>
+                            <li>Implemented CI/CD pipelines using Jenkins</li>
+                            <li>Decreased deployment time by 50%</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">AWS</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Terraform</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Jenkins</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/3" alt="Linux Monitoring Dashboard" class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                <i data-feather="activity" class="text-yellow-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Linux System Monitoring Dashboard</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Engineered a real-time monitoring dashboard using Linux as the core platform.</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+                            <li>Integrated Prometheus for data collection</li>
+                            <li>Visualized metrics with Grafana</li>
+                            <li>Boosted incident detection efficiency by 25%</li>
+                            <li>Utilized Bash scripting for automation</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Linux</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Prometheus</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Grafana</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Bash</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/4" alt="Real-time Log Analytics" class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                                <i data-feather="file-text" class="text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Real-time Log Analytics</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Authored an introductory guide on real-time log collection and analysis.</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+                            <li>Demonstrated techniques to parse, filter, and visualize log data</li>
+                            <li>Showcased effective monitoring strategies</li>
+                            <li>Reduced system downtime by 15%</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Log Analysis</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">ELK Stack</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Rohit Manna</h3>
+                    <p class="text-gray-400">Cloud Engineer specializing in AWS, Terraform, and CI/CD pipelines.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="experience.html" class="text-gray-400 hover:text-white transition">Experience</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/rohit-manna-92a5b2224/" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mt-4">rkmanna11@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Rohit Manna. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
